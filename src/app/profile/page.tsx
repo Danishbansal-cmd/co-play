@@ -80,8 +80,8 @@ const ProfilePage = () => {
 
                         <div className="relative w-full grid grid-cols-2 gap-x-4">
                             {
-                                profileData.map((item) => (
-                                    <div className="bg-black-shade-1 rounded-md px-6 py-6 flex flex-col justify-center items-start">
+                                profileData.map((item, index) => (
+                                    <div className="bg-black-shade-1 rounded-md px-6 py-6 flex flex-col justify-center items-start" key={index}>
                                         <p className="text-6xl font-bold text-white">{item.value}</p>
                                         <p>{item.context}</p>
                                     </div>
