@@ -24,11 +24,7 @@ export default function HomePage() {
         window.addEventListener("resize", setScreenHeight);
         return () => { window.removeEventListener('resize', setScreenHeight); }
     }, []);
-
-    console.log("height" + screen.height);
-    console.log("height" + screen.availHeight);
-    console.log("height" + window.innerHeight);
-
+    
     return (
         <>
             <Header />
